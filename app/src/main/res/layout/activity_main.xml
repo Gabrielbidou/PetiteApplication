@@ -20,7 +20,7 @@
             android:layout_gravity="fill_horizontal"
             android:text="My Button"
             android:id="@+id/button1"
-            android:onClick="onMyButton" />
+             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

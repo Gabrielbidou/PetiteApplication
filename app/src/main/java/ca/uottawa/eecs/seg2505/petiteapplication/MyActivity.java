@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -15,8 +16,10 @@ public class MyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my);
     }
 
-    public void onCancel(View view) {
-        finish();
+
+    public void goBack(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -39,5 +42,18 @@ public class MyActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void onCancel(View view) {
+        TextView monTextView1 = (TextView) findViewById(R.id.editText);
+        monTextView1.setText("");
+
+        TextView monTextView2 = (TextView) findViewById(R.id.editText2);
+        monTextView2.setText("");
+
+        TextView monTextView3 = (TextView) findViewById(R.id.editText3);
+        monTextView3.setText("");
+
     }
 }

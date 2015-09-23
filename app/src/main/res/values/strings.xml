@@ -4,4 +4,7 @@
     <string name="hello_world">!Hello!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_my">My Activity</string>
+    <string name="eee">Courriel</string>
+    <string name="ee">Nom</string>
+    <string name="e">Mot de Passe</string>
 </resources>
